@@ -18,4 +18,6 @@ PRODUCT_COPY_FILES += \
 # Release name
 PRODUCT_NAME := bliss_moto_msm8960_jbbl
 
+PRODUCT_PROPERTY_OVERRIDES += ro.build.product=moto_msm8960_jbbl
+
 $(call inherit-product, device/motorola/moto_msm8960_jbbl/full_moto_msm8960.mk)
