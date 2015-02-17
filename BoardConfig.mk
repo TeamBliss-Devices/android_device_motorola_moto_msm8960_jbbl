@@ -53,6 +53,7 @@ BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12884901888
+TARGET_GCC_VERSION_ARM := 4.10-linaro
 
 # Telephony
 BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril/MotorolaQualcommRIL.java
@@ -127,3 +128,6 @@ BOARD_SEPOLICY_UNION += \
     ueventd.te \
     vold.te \
     whisperd.te
+
+# BlissPop Configs
+BLISSIFY := true
