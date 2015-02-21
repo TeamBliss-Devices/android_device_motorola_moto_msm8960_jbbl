@@ -129,5 +129,10 @@ BOARD_SEPOLICY_UNION += \
     whisperd.te
 
 # BlissPop Configs
+TARGET_TC_ROM := 4.8
+TARGET_TC_KERNEL := 4.10-linaro
 BLISSIFY := true
-TARGET_GCC_VERSION_EXP := 4.9-sm
+BLISS_O3 := true
+BLISS_STRICT := true
+BLISS_GRAPHITE := true
+BLISS_KRAIT := true
