@@ -62,7 +62,6 @@ PRODUCT_PACKAGES += \
 
 # Misc
 PRODUCT_PACKAGES += \
-    DevicePerformanceSettingsHelper \
     sqlite3
 
 # Symlinks
