@@ -96,37 +96,39 @@ DEVICE_RESOLUTION := 720x1280
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/motorola/moto_msm8960_jbbl/sepolicy
+    device/motorola/msm8960_jbbl-common/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-    atvc.te \
-    batt_health.te \
-    bootmodem.te \
-    device.te \
-    file.te \
-    file_contexts \
-    graphicsd.te \
-    location.te \
-    mediaserver.te \
-    mm-qcamerad.te \
-    mpdecision.te \
-    netd.te \
-    netmgrd.te \
-    platform_app.te \
-    property_contexts \
-    property.te \
-    qdumpd.te \
-    qmuxd.te \
-    rild.te \
-    rmt_storage.te \
-    sensors.te \
-    surfaceflinger.te \
-    tee.te \
-    thermal-engine.te \
-    time_daemon.te \
-    ueventd.te \
-    vold.te \
-    whisperd.te
+aplogd.te \
+atvc.te \
+batt_health.te \
+bootmodem.te \
+device.te \
+file.te \
+file_contexts \
+graphicsd.te \
+location.te \
+mediaserver.te \
+mm-qcamerad.te \
+mpdecision.te \
+netd.te \
+netmgrd.te \
+platform_app.te \
+property_contexts \
+property.te \
+qdumpd.te \
+qmuxd.te \
+rild.te \
+rmt_storage.te \
+sensors.te \
+surfaceflinger.te \
+sysinit.te \
+tee.te \
+thermal-engine.te \
+time_daemon.te \
+ueventd.te \
+vold.te \
+whisperd.te
 
 # BlissPop Configs
 TARGET_TC_ROM := 4.8
