@@ -131,7 +131,7 @@ BOARD_SEPOLICY_UNION += \
     whisperd.te
 
 # Block_Build
-Bliss_Build_Block:=1 
+Bliss_Build_Block := 1 
 
 # BlissPop Configs
 BLISS_WIPE_CACHES := 1
