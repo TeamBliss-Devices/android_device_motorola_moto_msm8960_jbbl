@@ -15,8 +15,7 @@ TARGET_SCREEN_HEIGHT := 1280
 
 # Media
 PRODUCT_COPY_FILES += \
-    device/motorola/moto_msm8960_jbbl/config/media_codecs.xml:system/etc/media_codecs.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml
+    device/motorola/moto_msm8960_jbbl/config/media_codecs.xml:system/etc/media_codecs.xml
 
 # Release name
 PRODUCT_NAME := bliss_moto_msm8960_jbbl
