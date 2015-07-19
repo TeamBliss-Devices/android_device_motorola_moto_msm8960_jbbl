@@ -1,6 +1,3 @@
-# Bliss Viper Audio Mod
-BLISS_AUDIO_MOD := viper
-
 # Inherit some common Bliss stuff.
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
@@ -16,6 +13,9 @@ TARGET_SCREEN_HEIGHT := 1280
 # Media
 PRODUCT_COPY_FILES += \
     device/motorola/moto_msm8960_jbbl/config/media_codecs.xml:system/etc/media_codecs.xml
+	
+# Bliss Viper Audio Mod
+BLISS_AUDIO_MOD := viper
 
 # Release name
 PRODUCT_NAME := bliss_moto_msm8960_jbbl
