@@ -66,6 +66,7 @@ PRODUCT_PACKAGES += \
 
 # Compatibility symbols
 PRODUCT_PACKAGES += \
+    libmotou \
     libshim_cam
 
 # Misc
