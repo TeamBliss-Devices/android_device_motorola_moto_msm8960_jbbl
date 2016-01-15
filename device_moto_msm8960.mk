@@ -64,9 +64,8 @@ PRODUCT_PACKAGES += \
     graphicsd \
     mot_boot_mode
 
-# Camera compatibility libs
+# Compatibility symbols
 PRODUCT_PACKAGES += \
-    libcamera_motocl \
     libmotou \
     libshim_cam
 
@@ -130,6 +129,17 @@ PRODUCT_COPY_FILES += \
 # Alternate optional key maps
 PRODUCT_PACKAGES += \
     AsantiKeypad
+
+# SELinux execmod workaround
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/scripts/execmod-wrapper.sh:system/bin/mm-qcamera-daemon \
+    $(LOCAL_PATH)/scripts/execmod-wrapper.sh:system/bin/mpdecision \
+    $(LOCAL_PATH)/scripts/execmod-wrapper.sh:system/bin/qdumpd \
+    $(LOCAL_PATH)/scripts/execmod-wrapper.sh:system/bin/qmuxd \
+    $(LOCAL_PATH)/scripts/execmod-wrapper.sh:system/bin/rmt_storage \
+    $(LOCAL_PATH)/scripts/execmod-wrapper.sh:system/bin/sensors.qcom \
+    $(LOCAL_PATH)/scripts/execmod-wrapper.sh:system/bin/thermald \
+    $(LOCAL_PATH)/scripts/execmod-wrapper.sh:system/bin/whisperd
 
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
