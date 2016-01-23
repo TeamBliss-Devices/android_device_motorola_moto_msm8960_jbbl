@@ -97,9 +97,6 @@ DEVICE_RESOLUTION := 720x1280
 BOARD_SEPOLICY_DIRS += \
     device/motorola/msm8960_jbbl-common/sepolicy
 
-# LZMA Compression
-WITH_LZMA_OTA := true
-
 # Block_Build
 Bliss_Build_Block := 1 
 
@@ -108,18 +105,18 @@ BLISS_WIPE_CACHES := 1
 BLISSIFY := true
 BLISS_O3 := true
 BLISS_GRAPHITE := true
-BLISS_STRICT := true
+# BLISS_STRICT := true
 BLISS_KRAIT := true
 BLISS_PIPE := true
-ENABLE_GCCONLY := true
-TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
-ENABLE_MODULAR_O3 := true
-TARGET_USE_KRAIT_PLD_SET := true
+# ENABLE_GCCONLY := true
+# TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+# ENABLE_MODULAR_O3 := true
+# TARGET_USE_KRAIT_PLD_SET := true
 TARGET_TC_ROM := 5.2-linaro
 TARGET_TC_KERNEL := 4.8-linaro
 TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
-WITH_LZMA_OTA := true
+# WITH_LZMA_OTA := true
 
 #SaberMod
 -include vendor/bliss/config/sm.mk
