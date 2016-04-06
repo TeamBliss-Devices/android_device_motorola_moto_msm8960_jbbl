@@ -88,6 +88,7 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 # TWRP
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_USERIMAGES_USE_EXT4 := true
 # Needs to be changed for M
 DEVICE_RESOLUTION := 720x1280
